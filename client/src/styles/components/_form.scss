@@ -1,0 +1,43 @@
+.form {
+	border-radius: $border-radius-md;
+	width: 100%;
+	margin: 0 auto;
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+
+		&:not(:first-child) {
+			margin: 1.5rem 0;
+		}
+
+		label {
+			color: $text-secondary;
+			margin-bottom: 1rem;
+			margin-left: 0.5rem;
+		}
+		input,
+		textarea {
+			padding: 1.5rem;
+			border-radius: $border-radius-md;
+			box-shadow: $shadow;
+			border: 2px solid rgba($brand-primary, 0.15);
+			transition: all 0.3s;
+
+			&::placeholder {
+				color: $text-tertiary;
+				font-weight: 300;
+			}
+			&:focus {
+				outline: none;
+				border: 2px solid rgba($brand-primary, 0.35);
+			}
+		}
+	}
+	&__link {
+		margin: 1.5rem 1.5rem 0 1.5rem;
+	}
+  &__footer {
+    margin-top: 2.5rem;
+  }
+}

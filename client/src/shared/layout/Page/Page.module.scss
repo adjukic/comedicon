@@ -1,0 +1,17 @@
+@import "../../../styles/base/variables";
+
+.page {
+	background-color: $brand-light;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.contentToTop {
+	justify-content: flex-start;
+}

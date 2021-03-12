@@ -1,0 +1,45 @@
+@import "../../../styles/base/variables";
+
+// Buttons
+.btn {
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+	font-size: 1.6rem;
+	border-radius: $border-radius-md;
+	cursor: pointer;
+
+	// Theme
+	&--primary {
+		background-color: $brand-primary !important;
+		color: $brand-light !important;
+		a {
+			color: $brand-light !important;
+		}
+	}
+	&--secondary {
+		background-color: $brand-secondary !important;
+		color: $brand-light !important;
+		a {
+			color: $brand-light !important;
+		}
+	}
+	&--accent {
+		background-color: $brand-accent !important;
+		color: $brand-light !important;
+		a {
+			color: $brand-light !important;
+		}
+	}
+
+	// Size
+	&--sm {
+		padding: 0.4rem 1.5rem !important;
+	}
+	&--md {
+		padding: 0.8rem 2.5rem !important;
+	}
+	&--lg {
+		padding: 1.5rem 3.5rem !important;
+	}
+}

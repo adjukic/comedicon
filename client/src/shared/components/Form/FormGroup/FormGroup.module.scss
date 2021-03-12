@@ -1,0 +1,10 @@
+@import "../../../../styles/base/variables";
+
+.form__group {
+	display: flex;
+	flex-direction: column;
+
+	&:not(:first-child) {
+		margin: 1.5rem 0;
+	}
+}

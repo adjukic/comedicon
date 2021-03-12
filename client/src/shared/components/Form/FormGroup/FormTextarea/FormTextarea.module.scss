@@ -1,0 +1,20 @@
+@import "../../../../../styles/base/variables";
+
+.form__textarea {
+	padding: 2rem;
+	border-radius: $border-radius-md;
+	box-shadow: $shadow;
+	border: 2px solid rgba($brand-primary, 0.15);
+	transition: all 0.3s;
+	min-height: 14rem;
+  
+	&::placeholder {
+		color: $text-tertiary;
+		font-weight: 300;
+		font-size: 1.6rem;
+	}
+	&:focus {
+		outline: none;
+		border: 2px solid rgba($brand-primary, 0.35);
+	}
+}

@@ -1,0 +1,49 @@
+@import "../../../../../styles/base/variables";
+
+.feed-joke {
+	display: flex;
+	flex-direction: column;
+	border-radius: $border-radius-md;
+	border: 1px solid #f0f0f2;
+	padding: 2rem;
+	margin: 2rem 0;
+	text-align: center;
+	&__user-image {
+		margin: 0 auto;
+		width: 64px;
+		height: 64px;
+
+		img {
+			display: block;
+			border-radius: $border-radius-md;
+		}
+	}
+
+	&__content {
+		flex: 1;
+		padding: 0 1rem;
+	}
+	&__author {
+		font-weight: 700;
+		font-size: 1.8rem;
+	}
+	&__text {
+		padding: 0.5rem;
+		font-weight: 400;
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	&__tags {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__tag {
+		cursor: pointer;
+		border-radius: $border-radius-md;
+		padding: 0.1rem 1rem;
+		margin: 0.5rem;
+		background-color: $brand-primary;
+		color: $brand-light;
+	}
+}

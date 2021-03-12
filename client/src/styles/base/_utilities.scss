@@ -1,0 +1,20 @@
+// Container
+.container {
+	width: 90%;
+	margin: 2rem auto;
+
+	&--sm {
+		@extend .container;
+		max-width: 70rem;
+	}
+	&--md {
+		@extend .container;
+		max-width: 90rem;
+	}
+	&--lg {
+		@extend .container;
+		max-width: 120rem;
+	}
+}
+
+

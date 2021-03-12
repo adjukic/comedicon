@@ -1,0 +1,30 @@
+@import "../../styles/base/variables";
+
+.home-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+  
+	&__overlay {
+		height: 100%;
+		width: 100%;
+		background: rgba($brand-light, 0.2);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.home-intro {
+	margin-bottom: 3rem;
+	z-index: 100;
+	&__title {
+		margin-bottom: 1rem;
+		font-size: 2.8rem;
+	}
+	&__subtitle {
+		font-size: 1.6rem;
+	}
+}

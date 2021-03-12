@@ -1,0 +1,32 @@
+@import "../../../styles/base/variables";
+
+.menu {
+	ul {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		width: 100%;
+		background-color: $brand-light;
+		border-top-left-radius: $border-radius-sm;
+		border-top-right-radius: $border-radius-sm;
+		box-shadow: $shadow-top;
+	}
+
+	li {
+		flex: 1;
+		&:not(:first-child) {
+			border-left: 1px solid rgba($brand-secondary, 0.5);
+		}
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2.4rem;
+		span {
+			display: none;
+		}
+	}
+}
